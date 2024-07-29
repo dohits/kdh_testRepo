@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+echo "현재 계정: $(whoami)"
 echo "> kdh_ec2s3cd 배포"
 sudo su # 부여 -> 추후 빌드용 linux user 만들어서 보안 보완해야 할 듯
 cd /home/ubuntu/prjfolder/auto_repo/ # 빌드 폴더 있는 곳으로 이동
