@@ -36,5 +36,5 @@ jobs:
           --application-name kdh_ec2s3cd
           --deployment-config-name CodeDeployDefault.AllAtOnce
           --file-exists-behavior OVERWRITE
-          --deployment-group-name Github-deploy
+          --deployment-group-name kdh_ec2s3cd_group
           --s3-location bucket=kdh-ec2s3-bucket,key=kdh_ec2s3cd.zip,bundleType=zip
