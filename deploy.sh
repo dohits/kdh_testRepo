@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
+# nvm 환경 설정
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # nvm 로드
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # nvm bash_completion 로드
+
 echo "현재 계정: $(whoami)"
 echo "> kdh_ec2s3cd 배포"
 sudo su # 부여 -> 추후 빌드용 linux user 만들어서 보안 보완해야 할 듯
