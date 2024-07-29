@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/prjfolder/auto_repo/ # 프로젝트 경로
+    overwrite: yes
+permissions:
+  - object: /home/ubuntu/prjfolder/auto_repo # 프로젝트 경로
+    owner: root
+    group: root
+    mode: 755
+hooks:
+  AfterInstall:
+    - location: deploy.sh #ec2 다 올리고 실행할 bash script
+      timeout: 500
+      runas: root
